@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafetería SASS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=Raleway:wght@700;900&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+
+<body>
+    <header class="header header-nosotros">
+        <div class="contenido-header contenedor">
+            <div class="barra">
+                <div class="logo">
+                    <img src="build/img/logo.svg" alt="logo">
+                </div>
+                <div class="nav-principal">
+                    <a href="index.html">Inicio</a>
+                    <a class="activo" href="nosotros.html">Nosotros</a>
+                    <a href="proceso.html">Proceso</a>
+                    <a href="menu.html">Menú</a>
+                    <a href="galeria.html">Galería</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+            </div>
+            <div class="texto-header">
+                <h1>Una nueva experiencia cada día</h1>
+            </div>
+        </div>
+    </header>
+    <main class="contenedor contenido-principal">
+        <h2><span>Conoce más</span> Sobre Nosotros</h2>
+        <div class="contenido-nosotros">
+            <div class="imagen">
+                <picture>
+                    <source                       
+                        srcset="build/img/nosotros_sidebar.avif" 
+                        type="image/avif">
+                    <source                        
+                        srcset="build/img/nosotros_sidebar.webp" 
+                        type="image/webp">
+                    <source                        
+                        srcset="build/img/nosotros_sidebar.jpg" 
+                        type="image/jpeg">
+                    <img loading="lazy" decoding="async" src="build/img/nosotros_sidebar.jpg" lazyalt="imagen nosotros" width="500" height="300">
+                </picture>                
+            </div>  
+            <div class="texto">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quos. Cupiditate recusandae autem, deserunt error, amet, dolore officiis ex deleniti fugit alias voluptatum sed harum fuga tempora tenetur architecto voluptate.</p>
+                <blockquote>Lorem, ipsum dolor.</blockquote>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur est dignissimos ducimus facere animi vel, ut temporibus ipsum at nulla nisi unde laboriosam nesciunt, exercitationem non sunt quidem, hic expedita!</p>
+            </div>          
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <div class="contenedor contenido-footer fondo-blanco">
+            <div class="footer-box ubicacion">
+                <h3>Ubicacion</h3>
+                <p>García Cortinas 2357</p>
+                <p>Montevideo - Uruguay</p>
+            </div>
+            <div class="footer-box reservas">
+                <h3>Reservas</h3>
+                <p>098 255 789</p>
+                <p>reservas@cafereria.com</p>
+            </div>
+            <div class="footer-box horario">
+               <h3>Horario</h3> 
+               <p>L a V de 07:00 a 18:00</p>
+               <p>S y D de 09:00 a 13:00</p>
+            </div>
+        </div>
+        <p class="copyright">Todos los derechos reservasdos la Cafeteria</p>
+    </footer>
+
+</body>
+
+</html>
