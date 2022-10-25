@@ -1,8 +1,5 @@
 # :name_badge: cafe
 
-## :man: Autor
-- Juan I. Juambeltz
-
 ## :newspaper: Descripcion 
 - en construcción
 
@@ -13,4 +10,4 @@
 - Gulp.js
 
 ## 🌐 Ver sitio en vivo
-https://juambeltz.github.io/billetera_electronica/
+https://juambeltz.github.io/cafe/
