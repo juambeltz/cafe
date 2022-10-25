@@ -1,0 +1,56 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.nuestro-menu{
+    padding: 15rem 2rem 20rem 2rem;
+    background-color: v.$primario;
+    background-image: url(../img/menu_arriba.svg), url(../img/menu_abajo.svg), linear-gradient(to top, v.$primario, v.$primario);
+    background-repeat: no-repeat;
+    background-position: center top 5rem, center bottom 8rem;
+    background-size: 200%;
+
+
+    @include m.tab {
+        padding: 15rem 0 20rem 0;
+        background-size: 100%;
+    }
+
+    @include m.esc {
+        background-size: 50%, 50%, 100%; 
+        /*El ultimo valor es 100 para que el gradient ocupe todo*/
+    }
+
+}
+.grid-menu{
+    @include m.tab {
+        @include m.gcols(2, 3rem);
+    }
+}
+.menu{
+
+    h3{
+        color: v.$blanco;
+    }
+    li{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p{
+            color: v.$blanco;
+            font-size: 2.2rem;
+            line-height: 1.5;
+            margin: 0 0 2rem 0;
+            span{
+                display: block;
+                color: v.$secundario;
+                
+            }
+        }
+
+        .precio{
+            font-size: 3.5rem;
+            font-weight: 700;
+        }
+    }
+}
+

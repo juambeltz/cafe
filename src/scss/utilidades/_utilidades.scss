@@ -1,0 +1,25 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+/**** UTILIDADES ****/
+
+.text-center {
+    text-align: center;
+}
+
+.bg-primario {
+    background-color: v.$primario;
+}
+
+.margin-negativo-10{
+    margin-top: -10rem;
+}
+
+.fondo-blanco {
+    background-color: v.$blanco;
+}
+
+.padding-bottom-0 {
+    padding-bottom: 0;
+}
+

@@ -1,0 +1,13 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.contenido-principal {
+    background-color: v.$blanco;
+    padding: 5rem 2rem;
+
+    @include m.tab {
+        padding: 10rem;
+        margin-top: -10rem;/*tira para arriba espacio en blanco*/
+        position: relative;/*hace que suba en el z-indez y no lo tape el bkd del header*/
+    }
+}

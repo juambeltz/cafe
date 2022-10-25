@@ -1,0 +1,31 @@
+@use 'variables' as v;
+
+
+@mixin tel {
+    @media (min-width: v.$telefono) {
+        @content;
+    }
+}
+
+@mixin tab {
+    @media (min-width: v.$tablet) {
+        @content;
+    }
+}
+
+@mixin esc {
+    @media (min-width: v.$desktop) {
+        @content;
+    }
+}
+
+@mixin gcols ($columnas, $espaciado ) {
+    display:grid;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: $espaciado;
+}
+
+
+
+
+

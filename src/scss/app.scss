@@ -1,0 +1,6 @@
+@use 'base';
+@use 'header';/*por eso en la carpeeta header hay un archivo index que llama alos otros*/
+@use 'inicio';/*idem solo que es la carpeta inicio en este caso*/
+@use 'footer';
+@use 'internas';
+@use 'utilidades';

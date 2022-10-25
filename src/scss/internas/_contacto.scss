@@ -1,0 +1,55 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+/**** INTERNAS CONTACTO *****/
+
+.contenido-contacto{
+    
+    @include m.tab {
+        @include m.gcols (2, 3rem);
+        background-image: url(../img/granos_cafe.jpg);
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: 40%;
+    }
+}
+
+.formulario-centacto{
+
+    .campo{
+        margin-bottom: 2rem;
+        &:last-of-type{
+            margin-bottom: 0;
+        }
+
+        label{
+            text-transform: uppercase;
+            color: v.$primario;
+            display: block;
+            font-size: 2.2rem;
+            font-weight: 700;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            background-color: v.$primario;
+            color: v.$blanco;
+            padding: 1rem;
+            border: none;
+            font-size: 2.2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+
+        input:not([type="submit"]), select {
+            width: 100%;            
+            border: 3px solid v.$primario;
+            padding: 1rem;
+        }
+
+    }
+}

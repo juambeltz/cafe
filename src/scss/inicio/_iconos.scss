@@ -1,0 +1,28 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.iconos{
+    margin-top: 5rem;
+
+
+    .listado-iconos {
+
+        @include m.tab {
+            @include m.gcols(3, 2rem);
+        }
+        
+        li{
+            img {
+                width: 12rem;
+                margin: 0 auto;
+            }
+        
+            p {
+                font-family: v.$fuente-cursiva;
+                font-size: 3.2rem;            
+                color: v.$primario;
+            }
+        }
+
+    }
+}
